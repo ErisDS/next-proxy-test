@@ -4,8 +4,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/journal/:path*",
-        destination: "https://next-proxy-test.ghost.io/journal/:path*",
+        source: "/journal/:path*/",
+        destination: "https://next-proxy-test.ghost.io/journal/:path*/",
       }      
     ];
   },
