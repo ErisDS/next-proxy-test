@@ -8,8 +8,8 @@ const nextConfig = {
         destination: "https://next-proxy-test.ghost.io/journal/:path*/",
       },
       {
-        source: "/journal/sitemap.xml",
-        destination: "https://next-proxy-test.ghost.io/journal/sitemap.xml",
+        source: "/journal/path*",
+        destination: "https://next-proxy-test.ghost.io/journal/path*",
       }    
     ];
   },
