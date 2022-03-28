@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  trailingSlash: false,
+  trailingSlash: null,
   async rewrites() {
     return [     
+      {
+        source: "/journal/:path*/",
+        destination: "https://next-proxy-test.ghost.io/journal/:path*/",
+      },
       {
         source: "/journal/:path*",
         destination: "https://next-proxy-test.ghost.io/journal/:path*",
